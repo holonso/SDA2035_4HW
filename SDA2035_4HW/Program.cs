@@ -10,7 +10,8 @@ namespace SDA2035_4HW
     {
         static void Main(string[] args)
         {
-            int q, Sum = 0;
+            int q = 0;
+            int Sum = 0;
             // 1 - vvod chisla N
             Console.WriteLine("Введите целое число N > 0");
             int N = Convert.ToInt32(Console.ReadLine());
@@ -21,7 +22,7 @@ namespace SDA2035_4HW
                 goto Finish;
             }
             // 3 - sama formula
-            for (int i = 1; Sum < N * N; i++)
+            for (int i = 1; q < 2*N-1; i++)
             {
                 q = 2 * i - 1;
                 Console.WriteLine("{0} ", q);
